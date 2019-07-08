@@ -34,8 +34,15 @@ font-style: normal;
 .text-main {
   color:rgb(21,74,129);
 }
+.bg-main-overlay {
+  background-color:rgba(21,74,129,0.8);
+}
 .row {
   margin:0;
+}
+
+.wow {
+  visibility: hidden;
 }
 
 /* nav */
@@ -242,6 +249,7 @@ transform: rotate(-135deg);
 }
 
 #sam {
+  background:url("../img/oulton/MJP_Oulton_D3B08384-2.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
