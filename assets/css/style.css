@@ -51,7 +51,7 @@ font-style: normal;
   height:100px;
 }
 .navbar {
-    z-index: 1;
+    z-index: 1000;
     background: transparent;
     transition: all 0.5s ease-in;
 }
@@ -272,6 +272,10 @@ transform: rotate(-135deg);
   padding-bottom: 10rem;
   width:100%;
   height:100%;
+}
+/* social feeds */
+#social-feeds{
+  z-index: 1;
 }
 /* filler */
 .filler {
