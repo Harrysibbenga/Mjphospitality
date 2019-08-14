@@ -1,6 +1,6 @@
 jQuery( document ).ready(function( $ ) {
     // get year
-    $("#year").text(new Date().getFullYear())
+    $("#year").text(new Date().getFullYear());
 
     // lightbox
     $(document).on('click', '[data-toggle="lightbox"]', '[data-gallary="gallary"]', function(event) {
@@ -53,10 +53,10 @@ jQuery( document ).ready(function( $ ) {
     $(document).ready(function () {
         if($(window).width() <= 567 ){
             $(".more").click(function (){
-                $(this).parent().parent().parent().addClass("flip")
+                $(this).parent().parent().parent().addClass("flip");
             });
             $(".less").click(function (){
-                $(this).parent().parent().parent().removeClass("flip")
+                $(this).parent().parent().parent().removeClass("flip");
             });
         }
     });
