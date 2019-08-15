@@ -21,29 +21,29 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
         <nav class="navbar navbar-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo-dimentions" src="./assets/img/logo/MJP Hospitality logo white - 2019 Update NEW.png" alt="MJP logo with slogan Hospitality of Distingtion Quality Catering and Events">
                 </a>
-                <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon1"><span></span><span></span><span></span></div>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto align-items-end sub-font">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#what-we-do">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallary</a>
+                            <a class="nav-link" href="#gallery">Gallary</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Meet The Team</a>
+                            <a class="nav-link" href="#meet-the-team">Meet The Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact-section">Contact</a>
                         </li>
                     </ul>
                     <!-- Links -->
@@ -54,12 +54,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#!">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!">
+                            <a class="nav-link" href="https://www.instagram.com/mjphospitality/">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -600,12 +595,7 @@
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="p-2 fa-lg li-ic">
-                                        <i class="fab fa-linkedin-in"> </i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="p-2 fa-lg ins-ic">
+                                    <a class="p-2 fa-lg white-text ins-ic" href="https://www.instagram.com/mjphospitality/">
                                         <i class="fab fa-instagram"> </i>
                                     </a>
                                 </li>
@@ -637,23 +627,8 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="btn-floating btn-tw mx-1">
-                        <i class="fab fa-twitter"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-gplus mx-1">
-                        <i class="fab fa-google-plus-g"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-li mx-1">
-                        <i class="fab fa-linkedin-in"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-dribbble mx-1">
-                        <i class="fab fa-dribbble"> </i>
+                    <a class="btn-floating btn-insta mx-1" href="https://www.instagram.com/mjphospitality/">
+                        <i class="fab fa-instagram"> </i>
                     </a>
                 </li>
             </ul>
@@ -683,67 +658,38 @@
     <!-- Custom JS -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/jquery.js"></script>
-    <!-- Social feeds -->
-    <script type="text/javascript">
-        /* curator-feed */
-        (function(){
-        var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-        i.src = "https://cdn.curator.io/published/05465fd8-aeb9-4f62-b97d-940e9e2fcadb.js";
-        e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-        })();
-        </script>
     <script>
-        // This example requires the Places library. Include the libraries=places
-        // parameter when you first load the API. For example:
-        // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-  
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 52.6107, lng: -1.2579},
-                zoom: 15
-            });
-            
-            var myLatLng = {lat: 52.610806, lng: -1.257917};
-
-            var marker = new google.maps.Marker({
-                map: map,
-                position: myLatLng,
-                title: 'MJP Hospitality'
-            });
+        function validateForm() {
+        var name =  document.getElementById('name').value;
+        if (name == "") {
+            document.getElementById('status').innerHTML = "Name cannot be empty";
+            return false;
         }
-      </script>
-      <script>
-          function validateForm() {
-            var name =  document.getElementById('name').value;
-            if (name == "") {
-                document.getElementById('status').innerHTML = "Name cannot be empty";
+        var email =  document.getElementById('email').value;
+        if (email == "") {
+            document.getElementById('status').innerHTML = "Email cannot be empty";
+            return false;
+        } else {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(email)){
+                document.getElementById('status').innerHTML = "Email format invalid";
                 return false;
             }
-            var email =  document.getElementById('email').value;
-            if (email == "") {
-                document.getElementById('status').innerHTML = "Email cannot be empty";
-                return false;
-            } else {
-                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                if(!re.test(email)){
-                    document.getElementById('status').innerHTML = "Email format invalid";
-                    return false;
-                }
-            }
-            var subject =  document.getElementById('subject').value;
-            if (subject == "") {
-                document.getElementById('status').innerHTML = "Subject cannot be empty";
-                return false;
-            }
-            var message =  document.getElementById('message').value;
-            if (message == "") {
-                document.getElementById('status').innerHTML = "Message cannot be empty";
-                return false;
-            }
-            document.getElementById('status').innerHTML = "Sending...";
-            document.getElementById('contact-form').submit();
+        }
+        var subject =  document.getElementById('subject').value;
+        if (subject == "") {
+            document.getElementById('status').innerHTML = "Subject cannot be empty";
+            return false;
+        }
+        var message =  document.getElementById('message').value;
+        if (message == "") {
+            document.getElementById('status').innerHTML = "Message cannot be empty";
+            return false;
+        }
+        document.getElementById('status').innerHTML = "Sending...";
+        document.getElementById('contact-form').submit();
 
-            }
-      </script>
+        }
+    </script>
 </body>
 </html>
