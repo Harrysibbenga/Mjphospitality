@@ -268,7 +268,7 @@ transform: rotate(-135deg);
 }
 
 #oscar {
-  background: url("../img/chefs/Chef-04.jpg");
+  background-image: url("../img/chefs/Chef-04.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,10 +284,11 @@ transform: rotate(-135deg);
   background-size: cover; 
   width: 290px;
   height: 450px;
+  background-image:url("../img/logo/MJP Hospitality 2019 logo - Blue.png");
 }
 
 #sam {
-  background:url("../img/chefs/MJP_Oulton_D3B08384-2.jpg");
+  background-image:url("../img/chefs/MJP_Oulton_D3B08384-2.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,7 +297,7 @@ transform: rotate(-135deg);
   height: 450px;
 }
 
-#chris {
+#magda {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
