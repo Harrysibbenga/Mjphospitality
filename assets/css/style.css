@@ -2,6 +2,7 @@
 body {
   color: rgb(21, 74, 129);
 }
+
 .view,
 #about-section,
 #testimonials-section,
@@ -31,12 +32,23 @@ body {
 .bg-main {
   background-color: rgb(21, 74, 129);
 }
+
 .text-main {
   color: rgb(21, 74, 129);
 }
+
 .bg-main-overlay {
   background-color: rgba(21, 74, 129, 0.8);
 }
+
+.rgba-blue-strong {
+  background-color: rgba(21, 74, 129, 0.8);
+}
+
+.rgba-blue-light {
+  background-color: rgba(21, 74, 129, 0.3);
+}
+
 .row {
   margin: 0;
 }
@@ -44,11 +56,13 @@ body {
 .wow {
   visibility: hidden;
 }
+
 .aligner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .main-text {
   position: absolute;
   top: 35%;
@@ -77,6 +91,7 @@ body {
   width: 100px;
   height: 100px;
 }
+
 .navbar {
   z-index: 1000;
   background: transparent;
@@ -177,18 +192,23 @@ body {
 .carousel1 {
   background: url("../img/carousel/MJP_Oulton_D3B08599.jpg");
 }
+
 .carousel2 {
   background: url("../img/carousel/MJP_Oulton_D3B08372.jpg");
 }
+
 .carousel3 {
   background: url("../img/carousel/MJP_Oulton_D3B08223.jpg");
 }
+
 .carousel4 {
   background: url("../img/carousel/MJP_Oulton_D3B08608.jpg");
 }
+
 .carousel5 {
   background: url("../img/carousel/MJP_Croft_D4B09112.jpg");
 }
+
 /* about */
 .about {
   background: url("../img/croft/MJP_Croft_D4B09054.jpg");
@@ -293,7 +313,7 @@ body {
 }
 
 #sam {
-  background-image: url("../img/chefs/MJP_Oulton_D3B08384-2.jpg");
+  background-image: url("../img/thruxton/Sam Parker 3000px high.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -317,21 +337,25 @@ body {
   width: 100%;
   height: 100%;
 }
+
 /* social feeds */
 #social-feeds {
   z-index: 1;
 }
+
 /* filler */
 .filler {
   background-image: url("../img/teamparkerhosp/TeamParkerHosp-008.jpg");
   width: 100%;
   height: 100%;
 }
+
 /* map */
 #map {
   width: 100%;
   height: 100%;
 }
+
 /* footer */
 .footer-copy {
   color: rgba(255, 255, 255, 0.6);
@@ -345,6 +369,7 @@ body {
     transform-style: preserve-3d;
     position: relative;
   }
+
   #what-we-do #private .col-md-7 {
     order: 2 !important;
   }
@@ -358,6 +383,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .font-size {
     font-size: 1.2rem;
   }
