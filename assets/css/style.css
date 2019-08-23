@@ -1,13 +1,13 @@
 /* basic styling */
-body{
-  color:rgb(21,74,129);
+body {
+  color: rgb(21, 74, 129);
 }
 .view,
 #about-section,
 #testimonials-section,
 #filler-section,
 #map-section {
-    height: 100vh;
+  height: 100vh;
 }
 
 .header-font {
@@ -29,16 +29,16 @@ body{
 }
 
 .bg-main {
-  background-color: rgb(21,74,129);
+  background-color: rgb(21, 74, 129);
 }
 .text-main {
-  color:rgb(21,74,129);
+  color: rgb(21, 74, 129);
 }
 .bg-main-overlay {
-  background-color:rgba(21,74,129,0.8);
+  background-color: rgba(21, 74, 129, 0.8);
 }
 .row {
-  margin:0;
+  margin: 0;
 }
 
 .wow {
@@ -50,17 +50,17 @@ body{
   justify-content: center;
 }
 .main-text {
-    position: absolute;
-    top:35%;
-    width: 100%;
-    color: #FFF;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  color: #fff;
 }
 
 .main-text2 {
   position: absolute;
   top: -10%;
   width: 100%;
-  color: #FFF;
+  color: #fff;
 }
 
 .carousel-text {
@@ -74,104 +74,108 @@ body{
 
 /* nav */
 .logo-dimentions {
-  width:100px;
-  height:100px;
+  width: 100px;
+  height: 100px;
 }
 .navbar {
-    z-index: 1000;
-    background: transparent;
-    transition: all 0.5s ease-in;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.5s ease-in;
 }
 
 .navbar .logo-dimentions {
-    transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .navbar.shrink {
-    background: rgb(21,74,129);
-    transition: all 0.5s ease-in;
+  background: rgb(21, 74, 129);
+  transition: all 0.5s ease-in;
 }
 
-.navbar.shrink .logo-dimentions{
-    width: 50px;
-    height: 50px; 
-    transition: all 0.5s ease-in;
+.navbar.shrink .logo-dimentions {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease-in;
 }
 
-.animated-icon1, .animated-icon2, .animated-icon3 {
-width: 30px;
-height: 20px;
-position: relative;
-margin: 0px;
--webkit-transform: rotate(0deg);
--moz-transform: rotate(0deg);
--o-transform: rotate(0deg);
-transform: rotate(0deg);
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-cursor: pointer;
+.animated-icon1,
+.animated-icon2,
+.animated-icon3 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
-display: block;
-position: absolute;
-height: 3px;
-width: 100%;
-border-radius: 9px;
-opacity: 1;
-left: 0;
--webkit-transform: rotate(0deg);
--moz-transform: rotate(0deg);
--o-transform: rotate(0deg);
-transform: rotate(0deg);
--webkit-transition: .25s ease-in-out;
--moz-transition: .25s ease-in-out;
--o-transition: .25s ease-in-out;
-transition: .25s ease-in-out;
+.animated-icon1 span,
+.animated-icon2 span,
+.animated-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .animated-icon1 span {
-background: white;
+  background: white;
 }
 
 .animated-icon1 span:nth-child(1) {
-top: 0px;
+  top: 0px;
 }
 
 .animated-icon1 span:nth-child(2) {
-top: 10px;
+  top: 10px;
 }
 
 .animated-icon1 span:nth-child(3) {
-top: 20px;
+  top: 20px;
 }
 
 .animated-icon1.open span:nth-child(1) {
-top: 11px;
--webkit-transform: rotate(135deg);
--moz-transform: rotate(135deg);
--o-transform: rotate(135deg);
-transform: rotate(135deg);
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .animated-icon1.open span:nth-child(2) {
-opacity: 0;
-left: -60px;
+  opacity: 0;
+  left: -60px;
 }
 
 .animated-icon1.open span:nth-child(3) {
-top: 11px;
--webkit-transform: rotate(-135deg);
--moz-transform: rotate(-135deg);
--o-transform: rotate(-135deg);
-transform: rotate(-135deg);
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 /* intro */
 .carousel1 {
-    background: url("../img/carousel/MJP_Oulton_D3B08599.jpg");
+  background: url("../img/carousel/MJP_Oulton_D3B08599.jpg");
 }
 .carousel2 {
   background: url("../img/carousel/MJP_Oulton_D3B08372.jpg");
@@ -187,35 +191,35 @@ transform: rotate(-135deg);
 }
 /* about */
 .about {
-    background: url("../img/croft/MJP_Croft_D4B09054.jpg");
-    width:100%;
-    height:100%;
+  background: url("../img/croft/MJP_Croft_D4B09054.jpg");
+  width: 100%;
+  height: 100%;
 }
 
 /* parallax */
 .parallax {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* gallary */
-#gallery .col-md-4{
-    height: 100%;
-    padding: 0.5rem;
+#gallery .col-md-4 {
+  height: 100%;
+  padding: 0.5rem;
 }
 
 #gallery .img-fluid {
-    width:100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* testimonials */
 .testimonials {
   background-image: url("../img/services/Testimonials.jpg");
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* meet the team */
@@ -225,12 +229,13 @@ transform: rotate(-135deg);
 
 .card-flip {
   -webkit-perspective: 1000px;
-          perspective: 1000px;
+  perspective: 1000px;
 }
 
-.card-flip:hover .flip, .card-flip.hover .flip {
+.card-flip:hover .flip,
+.card-flip.hover .flip {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card-flip,
@@ -243,14 +248,14 @@ transform: rotate(-135deg);
 .swap.flip {
   transition: 0.6s;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   position: relative;
 }
 
 .front,
 .back {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -259,20 +264,20 @@ transform: rotate(-135deg);
 .front {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .back {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 #oscar {
-  background-image: url("../img/chefs/Chef-04.jpg");
+  background-image: url("../img/thruxton/MJP_Thruxton_D3B08797.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   width: 290px;
   height: 450px;
 }
@@ -281,18 +286,18 @@ transform: rotate(-135deg);
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   width: 290px;
   height: 450px;
-  background-image:url("../img/logo/MJP Hospitality 2019 logo - Blue.png");
+  background-image: url("../img/logo/MJP Hospitality 2019 logo - Blue.png");
 }
 
 #sam {
-  background-image:url("../img/chefs/MJP_Oulton_D3B08384-2.jpg");
+  background-image: url("../img/chefs/MJP_Oulton_D3B08384-2.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   width: 290px;
   height: 450px;
 }
@@ -301,58 +306,59 @@ transform: rotate(-135deg);
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   width: 290px;
   height: 450px;
+  background-image: url("../img/thruxton/MJP_Thruxton_D3B08769.jpg");
 }
 
 .max-cont {
   padding-top: 19rem;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 /* social feeds */
-#social-feeds{
+#social-feeds {
   z-index: 1;
 }
 /* filler */
 .filler {
   background-image: url("../img/teamparkerhosp/TeamParkerHosp-008.jpg");
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 /* map */
 #map {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 /* footer */
 .footer-copy {
-  color: rgba(255,255,255,.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* media queries */
 @media (max-width: 567px) {
-  .swap{
+  .swap {
     transition: 0.6s;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     position: relative;
   }
-  #what-we-do #private .col-md-7{
-    order:2 !important;
+  #what-we-do #private .col-md-7 {
+    order: 2 !important;
   }
 }
 
 @media (min-width: 768px) {
-    .parallax {
-        background-attachment: fixed;
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
-    }
-    .font-size {
-      font-size: 1.2rem;
-    }
+  .parallax {
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .font-size {
+    font-size: 1.2rem;
+  }
 }
