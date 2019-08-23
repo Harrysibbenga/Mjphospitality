@@ -387,4 +387,8 @@ body {
   .font-size {
     font-size: 1.3rem;
   }
+
+  .test-font-size {
+    font-size: 1.2rem;
+  }
 }
