@@ -375,7 +375,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .parallax {
     background-attachment: fixed;
     position: relative;
